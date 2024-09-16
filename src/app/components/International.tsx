@@ -7,7 +7,6 @@ const countries = [
   { icon: "icon-[emojione--flag-for-ecuador]", name: "Ecuador" },
   { icon: "icon-[emojione--flag-for-peru]", name: "Perú" },
   { icon: "icon-[emojione--flag-for-colombia]", name: "Colombia" },
-  { icon: "icon-[emojione--flag-for-venezuela]", name: "Venezuela" },
   { icon: "icon-[emojione--flag-for-chile]", name: "Chile" },
   { icon: "icon-[emojione--flag-for-mexico]", name: "México" },
   { icon: "icon-[emojione--flag-for-costa-rica]", name: "Costa Rica" },
