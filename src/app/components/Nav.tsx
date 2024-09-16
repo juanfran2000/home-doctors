@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 
 export default function Nav() {
-  let [toggle, setToggle] = useState(true);
+  const [toggle, setToggle] = useState(true); // Cambiado 'let' a 'const'
 
   const toggleMenu = () => {
     setToggle(!toggle);
@@ -39,16 +39,15 @@ export default function Nav() {
           </li>
         </ul>
         <div
-          onClick={() => {
-            toggleMenu();
-          }}
+          onClick={toggleMenu} // Simplificado
+          className="md:hidden cursor-pointer" // Agregado cursor pointer para indicar clicabilidad
         >
           <span
             className={`${
               toggle
                 ? "icon-[marketeq--menu]"
                 : "icon-[ph--x-thin] text-blue-600"
-            } md:hidden text-4xl`}
+            } text-4xl`}
           />
         </div>
       </nav>
