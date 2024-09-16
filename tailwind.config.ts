@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+const { addDynamicIconSelectors } = require("@iconify/tailwind");
 
 const config: Config = {
   content: [
