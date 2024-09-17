@@ -1,21 +1,10 @@
 "use client";
 import Image from "next/image";
-import { useEffect } from "react";
-import sr from "../utils/scrollReveal";
 
 export default function Out() {
-  useEffect(() => {
-    sr.reveal(".reveal", {
-      origin: "bottom",
-      distance: "30px",
-      duration: 2000,
-      delay: 100,
-      reset: false,
-    });
-  }, []);
   return (
     <div className="bg-blue-100 w-full flex py-40">
-      <div className="w-[50%] flex justify-center items-center reveal">
+      <div className="w-[50%] flex justify-center items-center ">
         <Image
           src="/drugs.png"
           alt="imagen pastillas"
@@ -24,7 +13,7 @@ export default function Out() {
           className="w-8/12"
         />
       </div>
-      <div className="lg:w-[50%] font-semibold text-zinc-500 flex flex-col justify-center gap-y-8 pl-8 reveal">
+      <div className="lg:w-[50%] font-semibold text-zinc-500 flex flex-col justify-center gap-y-8 pl-8 ">
         <h3 className="text-4xl text-black w-11/12 md:w-9/12">
           Una dosis de nosotros
         </h3>

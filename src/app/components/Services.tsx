@@ -1,6 +1,4 @@
 "use client";
-import { useEffect } from "react";
-import sr from "../utils/scrollReveal";
 
 const cards = [
   {
@@ -46,19 +44,9 @@ const cards = [
 ];
 
 export default function Services() {
-  useEffect(() => {
-    // Revelar elementos cuando se monta el componente
-    sr.reveal(".reveal", {
-      origin: "bottom",
-      distance: "30px",
-      duration: 2000,
-      delay: 100,
-      reset: false,
-    });
-  }, []);
   return (
-    <div className="flex flex-col justify-center items-center py-20 bg-gray-100 reveal">
-      <div className="flex flex-col justify-center items-center w-10/12 md:w-6/12 font-semibold text-zinc-500 gap-y-6 reveal">
+    <div className="flex flex-col justify-center items-center py-20 bg-gray-100">
+      <div className="flex flex-col justify-center items-center w-10/12 md:w-6/12 font-semibold text-zinc-500 gap-y-6">
         <h4 className="text-sm">SERVICIOS</h4>
         <h3 className="text-4xl text-black">Nuestros servicios</h3>
         <p className="text-center">
@@ -68,7 +56,7 @@ export default function Services() {
           servicio y garantizando un alto estándar de calidad.
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mt-20 px-20 reveal">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mt-20 px-20">
         {cards.map((info, index) => {
           return (
             <div className="flex flex-col items-center" key={index}>
