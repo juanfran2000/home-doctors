@@ -13,7 +13,7 @@ export default function Nav() {
     <div>
       <nav className="flex justify-between px-8 md:justify-around items-center py-4">
         <Image
-          src="/home_doctors.png"
+          src="/home_doctors.PNG"
           alt="logo"
           width={110}
           height={110}
