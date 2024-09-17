@@ -1,6 +1,4 @@
 "use client";
-import { useEffect } from "react";
-import sr from "../utils/scrollReveal";
 
 const countries = [
   { icon: "icon-[emojione--flag-for-argentina]", name: "Argentina" },
@@ -13,25 +11,15 @@ const countries = [
 ];
 
 export default function International() {
-  useEffect(() => {
-    // Revelar elementos cuando se monta el componente
-    sr.reveal(".reveal", {
-      origin: "bottom",
-      distance: "30px",
-      duration: 2000,
-      delay: 100,
-      reset: false,
-    });
-  }, []);
   return (
-    <div className="py-20 flex flex-col items-center gap-y-14 reveal">
+    <div className="py-20 flex flex-col items-center gap-y-14 ">
       <h2 className="text-4xl font-semibold">Estamos presentes en </h2>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-10 lg:px-20 ">
         {countries.map((info, index) => {
           return (
             <div
               key={index}
-              className="w-[300px] h-44 bg-white flex flex-col items-center gap-y-2 rounded-md hover:bg-blue-500 transition-all group reveal"
+              className="w-[300px] h-44 bg-white flex flex-col items-center gap-y-2 rounded-md hover:bg-blue-500 transition-all group "
             >
               <div className="w-24 h-24 rounded-full flex justify-center items-center bg-gray-100 p-2">
                 <span className={`text-9xl ${info.icon}`} />

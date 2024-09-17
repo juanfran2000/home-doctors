@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 
 export default function Nav() {
-  const [toggle, setToggle] = useState(true); // Cambiado 'let' a 'const'
+  const [toggle, setToggle] = useState(true);
 
   const toggleMenu = () => {
     setToggle(!toggle);

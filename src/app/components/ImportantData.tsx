@@ -31,7 +31,7 @@ export default function ImportantData() {
         {cards.map((info, index) => (
           <div
             key={index}
-            className="w-11/12 lg:w-[40%] h-80 shadow-md rounded-md bg-white flex flex-col px-12 gap-y-4 justify-center hover:bg-blue-500 group transition-all reveal"
+            className="w-11/12 lg:w-[40%] h-80 shadow-md rounded-md bg-white flex flex-col px-12 gap-y-4 justify-center hover:bg-blue-500 group transition-all "
           >
             <div className="w-16 h-16 flex justify-center items-center bg-blue-100 group-hover:bg-blue-400 rounded-full">
               <span
@@ -47,7 +47,7 @@ export default function ImportantData() {
           </div>
         ))}
       </div>
-      <div className="lg:w-[50%] font-semibold text-zinc-500 flex flex-col justify-center gap-y-8 pl-8 reveal">
+      <div className="lg:w-[50%] font-semibold text-zinc-500 flex flex-col justify-center gap-y-8 pl-8 ">
         <h4>ALGUNOS DATOS IMPORTANTES</h4>
         <h3 className="text-4xl text-black w-11/12 md:w-9/12">
           Hemos gestionado atenciones para más de 10.000 personas
