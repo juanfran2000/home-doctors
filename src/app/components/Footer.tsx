@@ -5,7 +5,7 @@ export default function Footer() {
     <div>
       <div className="flex flex-col gap-20 lg:flex-row lg:justify-around pl-10">
         <div className="flex items-center justify-start">
-          <Image src="/home_doctors.png" alt="logo" width={110} height={110} />
+          <Image src="/home_doctors.PNG" alt="logo" width={110} height={110} />
         </div>
         <ul className="text-white">
           <li>
