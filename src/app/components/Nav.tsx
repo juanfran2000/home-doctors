@@ -1,13 +1,22 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
 export default function Nav() {
+  const t = useTranslations("nav");
   const [toggle, setToggle] = useState(true);
 
   const toggleMenu = () => {
     setToggle(!toggle);
   };
+
+  const navLinks = [
+    { link: "#our", title: `${t("about")}` },
+    { link: "#services", title: `${t("services")}` },
+    { link: "#countries", title: `${t("coverage")}` },
+    { link: "#contact", title: `${t("contact")}` },
+  ];
 
   return (
     <div>
@@ -22,21 +31,17 @@ export default function Nav() {
         <ul className="hidden md:flex gap-x-8 xl:gap-x-12 items-center">
           <li>
             <a href="#home">
-              Home <b className="text-blue-500">ASSITS</b>
+              {t("home")}
+              <b className="text-blue-500">{t("blue")}</b>
             </a>
           </li>
-          <li>
-            <a href="#our">Sobre Nosotros</a>
-          </li>
-          <li>
-            <a href="#services">Servicios</a>
-          </li>
-          <li>
-            <a href="#countries">Cobertura</a>
-          </li>
-          <li>
-            <a href="#contact">Contáctenos</a>
-          </li>
+          {navLinks.map((info, index) => {
+            return (
+              <li key={index}>
+                <a href={info.link}>{info.title}</a>
+              </li>
+            );
+          })}
         </ul>
         <div
           onClick={toggleMenu} // Simplificado
@@ -59,21 +64,16 @@ export default function Nav() {
         <ul className="bg-sky-950 text-white py-6 px-8 flex flex-col gap-y-4">
           <li>
             <a href="#home">
-              Home <b className="text-blue-500">ASSITS</b>
+              {t("home")} <b className="text-blue-500">{t("blue")}</b>
             </a>
           </li>
-          <li>
-            <a href="#our">Sobre Nosotros</a>
-          </li>
-          <li>
-            <a href="#services">Servicios</a>
-          </li>
-          <li>
-            <a href="#countries">Cobertura</a>
-          </li>
-          <li>
-            <a href="#contact">Contáctenos</a>
-          </li>
+          {navLinks.map((info, index) => {
+            return (
+              <li key={index}>
+                <a href={info.link}>{info.title}</a>
+              </li>
+            );
+          })}
         </ul>
       </div>
     </div>
