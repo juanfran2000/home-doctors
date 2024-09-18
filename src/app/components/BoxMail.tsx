@@ -1,4 +1,4 @@
-import LocalSwitcher from "./localSwitcher";
+import Switcher from "./Switcher";
 
 export default function BoxMail() {
   return (
@@ -12,7 +12,7 @@ export default function BoxMail() {
         <div className="bg-blue-500 w-[50px] flex justify-center h-10 items-center">
           ENG
         </div> */}
-        <LocalSwitcher />
+        <Switcher />
       </div>
     </div>
   );

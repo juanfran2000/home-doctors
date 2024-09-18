@@ -3,7 +3,7 @@ import { useRouter } from "next/navigation";
 import { ChangeEvent, useTransition } from "react";
 import { useLocale } from "use-intl";
 
-export default function LocalSwitcher() {
+export default function Switcher() {
   const [isPending, startTransition] = useTransition();
   const router = useRouter();
   const localActive = useLocale();
