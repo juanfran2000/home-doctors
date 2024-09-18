@@ -1,0 +1,14 @@
+{
+    "hero": {
+        "h2":"+10,000 servicios médicos coordinados",
+        "h4":"Y continuamos creciendo día a día."
+    },
+    "nav": {
+        "home": "Hogar",
+        "blue":" Asistencia",
+       "about":"Sobre Nosotros",
+       "services":"Servicios",
+        "coverage":"Cobertura",
+        "contact":"Contáctanos"
+    }
+}
